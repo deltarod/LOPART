@@ -1,2 +1,0 @@
-PYTHONMALLOC=malloc valgrind --show-leak-kinds=definite --track-origins=yes --log-file=/home/tristan/Research/LOPART/valgrind-output \
-    python3 -m pytest -vv --valgrind --valgrind-log=/home/tristan/Research/LOPART/valgrind-output
