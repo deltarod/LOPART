@@ -1,0 +1,363 @@
+==55372== Memcheck, a memory error detector
+==55372== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==55372== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==55372== Command: python3 -m pytest -vv --valgrind --valgrind-log=/home/tristan/Research/LOPART/valgrind-output
+==55372== Parent PID: 55371
+==55372== 
+==55394== Warning: invalid file descriptor 1048564 in syscall close()
+==55394== Warning: invalid file descriptor 1048565 in syscall close()
+==55394== Warning: invalid file descriptor 1048566 in syscall close()
+==55394== Warning: invalid file descriptor 1048567 in syscall close()
+==55394==    Use --log-fd=<number> to select an alternative log fd.
+==55394== Warning: invalid file descriptor 1048568 in syscall close()
+==55394== Warning: invalid file descriptor 1048569 in syscall close()
+**55372** **********************************************************************
+**55372** Flushing errors before first test:
+==55372== 48 (+48) bytes in 1 (+1) blocks are definitely lost in loss record 5,550 of 25,491
+==55372==    at 0x483C7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==55372==    by 0x4EAB8E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x4F4F88: PyTuple_Pack (in /usr/bin/python3.8)
+==55372==    by 0x31770827: __pyx_pymod_exec_mtrand (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/mtrand.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x5D4E9B: PyModule_ExecDef (in /usr/bin/python3.8)
+==55372==    by 0x5D4DC6: ??? (in /usr/bin/python3.8)
+==55372==    by 0x51D70E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50EF30: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x50E301: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372== 
+==55372== 48 (+48) bytes in 1 (+1) blocks are definitely lost in loss record 5,551 of 25,491
+==55372==    at 0x483C7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==55372==    by 0x4EAB8E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x4F4F88: PyTuple_Pack (in /usr/bin/python3.8)
+==55372==    by 0x31A0CAF4: __pyx_pymod_exec_bit_generator (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/bit_generator.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x5D4E9B: PyModule_ExecDef (in /usr/bin/python3.8)
+==55372==    by 0x5D4DC6: ??? (in /usr/bin/python3.8)
+==55372==    by 0x51D70E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50EF30: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x50E301: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372== 
+==55372== 48 (+48) bytes in 1 (+1) blocks are definitely lost in loss record 5,552 of 25,491
+==55372==    at 0x483C7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==55372==    by 0x4EAB8E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x4F4F88: PyTuple_Pack (in /usr/bin/python3.8)
+==55372==    by 0x31C359C4: __pyx_pymod_exec__common (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/_common.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x5D4E9B: PyModule_ExecDef (in /usr/bin/python3.8)
+==55372==    by 0x5D4DC6: ??? (in /usr/bin/python3.8)
+==55372==    by 0x51D70E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50EF30: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x50E301: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372== 
+==55372== 48 (+48) bytes in 1 (+1) blocks are definitely lost in loss record 5,553 of 25,491
+==55372==    at 0x483C7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==55372==    by 0x4EAB8E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x4F4F88: PyTuple_Pack (in /usr/bin/python3.8)
+==55372==    by 0x32165587: __pyx_pymod_exec__bounded_integers (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/_bounded_integers.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x5D4E9B: PyModule_ExecDef (in /usr/bin/python3.8)
+==55372==    by 0x5D4DC6: ??? (in /usr/bin/python3.8)
+==55372==    by 0x51D70E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50EF30: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x50E301: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372== 
+==55372== 48 (+48) bytes in 1 (+1) blocks are definitely lost in loss record 5,554 of 25,491
+==55372==    at 0x483C7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==55372==    by 0x4EAB8E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x4F4F88: PyTuple_Pack (in /usr/bin/python3.8)
+==55372==    by 0x323B655D: __pyx_pymod_exec__mt19937 (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/_mt19937.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x5D4E9B: PyModule_ExecDef (in /usr/bin/python3.8)
+==55372==    by 0x5D4DC6: ??? (in /usr/bin/python3.8)
+==55372==    by 0x51D70E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50EF30: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x50E301: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372== 
+==55372== 48 (+48) bytes in 1 (+1) blocks are definitely lost in loss record 5,555 of 25,491
+==55372==    at 0x483C7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==55372==    by 0x4EAB8E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x4F4F88: PyTuple_Pack (in /usr/bin/python3.8)
+==55372==    by 0x325CE777: __pyx_pymod_exec__philox (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/_philox.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x5D4E9B: PyModule_ExecDef (in /usr/bin/python3.8)
+==55372==    by 0x5D4DC6: ??? (in /usr/bin/python3.8)
+==55372==    by 0x51D70E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50EF30: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x50E301: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372== 
+==55372== 48 (+48) bytes in 1 (+1) blocks are definitely lost in loss record 5,556 of 25,491
+==55372==    at 0x483C7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==55372==    by 0x4EAB8E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x4F4F88: PyTuple_Pack (in /usr/bin/python3.8)
+==55372==    by 0x327E2FE7: __pyx_pymod_exec__pcg64 (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/_pcg64.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x5D4E9B: PyModule_ExecDef (in /usr/bin/python3.8)
+==55372==    by 0x5D4DC6: ??? (in /usr/bin/python3.8)
+==55372==    by 0x51D70E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50EF30: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x50E301: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372== 
+==55372== 48 (+48) bytes in 1 (+1) blocks are definitely lost in loss record 5,557 of 25,491
+==55372==    at 0x483C7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==55372==    by 0x4EAB8E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x4F4F88: PyTuple_Pack (in /usr/bin/python3.8)
+==55372==    by 0x327E3003: __pyx_pymod_exec__pcg64 (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/_pcg64.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x5D4E9B: PyModule_ExecDef (in /usr/bin/python3.8)
+==55372==    by 0x5D4DC6: ??? (in /usr/bin/python3.8)
+==55372==    by 0x51D70E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50EF30: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x50E301: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372== 
+==55372== 48 (+48) bytes in 1 (+1) blocks are definitely lost in loss record 5,558 of 25,491
+==55372==    at 0x483C7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==55372==    by 0x4EAB8E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x4F4F88: PyTuple_Pack (in /usr/bin/python3.8)
+==55372==    by 0x329F3A92: __pyx_pymod_exec__sfc64 (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/_sfc64.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x5D4E9B: PyModule_ExecDef (in /usr/bin/python3.8)
+==55372==    by 0x5D4DC6: ??? (in /usr/bin/python3.8)
+==55372==    by 0x51D70E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50EF30: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x50E301: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372== 
+==55372== 48 (+48) bytes in 1 (+1) blocks are definitely lost in loss record 5,559 of 25,491
+==55372==    at 0x483C7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==55372==    by 0x4EAB8E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x4F4F88: PyTuple_Pack (in /usr/bin/python3.8)
+==55372==    by 0x329F3AAE: __pyx_pymod_exec__sfc64 (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/_sfc64.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x5D4E9B: PyModule_ExecDef (in /usr/bin/python3.8)
+==55372==    by 0x5D4DC6: ??? (in /usr/bin/python3.8)
+==55372==    by 0x51D70E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50EF30: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x50E301: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372== 
+==55372== 48 (+48) bytes in 1 (+1) blocks are definitely lost in loss record 5,560 of 25,491
+==55372==    at 0x483C7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==55372==    by 0x4EAB8E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x4F4F88: PyTuple_Pack (in /usr/bin/python3.8)
+==55372==    by 0x32C09C59: __Pyx_InitCachedConstants (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/_generator.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x32C0AE87: __pyx_pymod_exec__generator (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/_generator.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x5D4E9B: PyModule_ExecDef (in /usr/bin/python3.8)
+==55372==    by 0x5D4DC6: ??? (in /usr/bin/python3.8)
+==55372==    by 0x51D70E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50EF30: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372== 
+==55372== 65 (+65) (32 (+32) direct, 33 (+33) indirect) bytes in 1 (+1) blocks are definitely lost in loss record 10,847 of 25,491
+==55372==    at 0x483C7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==55372==    by 0x82BA30D: _buffer_get_info (in /home/tristan/.local/lib/python3.8/site-packages/numpy/core/_multiarray_umath.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x82BAAC4: array_getbuffer (in /home/tristan/.local/lib/python3.8/site-packages/numpy/core/_multiarray_umath.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x31A130FD: __Pyx__GetBufferAndValidate.constprop.64 (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/bit_generator.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x31A148CD: __pyx_f_5numpy_6random_13bit_generator_12SeedSequence_mix_entropy (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/bit_generator.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x31A1BEF0: __pyx_pw_5numpy_6random_13bit_generator_12SeedSequence_1__init__ (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/bit_generator.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x514787: ??? (in /usr/bin/python3.8)
+==55372==    by 0x31A1338C: __Pyx__PyObject_CallOneArg (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/bit_generator.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x31A13569: __Pyx_PyObject_CallOneArg (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/bit_generator.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x31A2233E: __pyx_pw_5numpy_6random_13bit_generator_12BitGenerator_1__init__ (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/bit_generator.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x581C4E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x59F8D2: ??? (in /usr/bin/python3.8)
+==55372== 
+==55372== 224 (+224) (176 (+176) direct, 48 (+48) indirect) bytes in 1 (+1) blocks are definitely lost in loss record 19,000 of 25,491
+==55372==    at 0x483C7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==55372==    by 0x5070A8: PyCode_NewWithPosOnlyArgs (in /usr/bin/python3.8)
+==55372==    by 0x4E56EB: PyCode_New (in /usr/bin/python3.8)
+==55372==    by 0x32C09F16: __Pyx_InitCachedConstants (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/_generator.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x32C0AE87: __pyx_pymod_exec__generator (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/_generator.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x5D4E9B: PyModule_ExecDef (in /usr/bin/python3.8)
+==55372==    by 0x5D4DC6: ??? (in /usr/bin/python3.8)
+==55372==    by 0x51D70E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50EF30: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372== 
+==55372== 232 (+232) (176 (+176) direct, 56 (+56) indirect) bytes in 1 (+1) blocks are definitely lost in loss record 19,139 of 25,491
+==55372==    at 0x483C7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==55372==    by 0x5070A8: PyCode_NewWithPosOnlyArgs (in /usr/bin/python3.8)
+==55372==    by 0x4E56EB: PyCode_New (in /usr/bin/python3.8)
+==55372==    by 0x31770890: __pyx_pymod_exec_mtrand (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/mtrand.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x5D4E9B: PyModule_ExecDef (in /usr/bin/python3.8)
+==55372==    by 0x5D4DC6: ??? (in /usr/bin/python3.8)
+==55372==    by 0x51D70E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50EF30: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x50E301: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372== 
+==55372== 232 (+232) (176 (+176) direct, 56 (+56) indirect) bytes in 1 (+1) blocks are definitely lost in loss record 19,140 of 25,491
+==55372==    at 0x483C7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==55372==    by 0x5070A8: PyCode_NewWithPosOnlyArgs (in /usr/bin/python3.8)
+==55372==    by 0x4E56EB: PyCode_New (in /usr/bin/python3.8)
+==55372==    by 0x317708FD: __pyx_pymod_exec_mtrand (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/mtrand.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x5D4E9B: PyModule_ExecDef (in /usr/bin/python3.8)
+==55372==    by 0x5D4DC6: ??? (in /usr/bin/python3.8)
+==55372==    by 0x51D70E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50EF30: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x50E301: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372== 
+==55372== 232 (+232) (176 (+176) direct, 56 (+56) indirect) bytes in 1 (+1) blocks are definitely lost in loss record 19,141 of 25,491
+==55372==    at 0x483C7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==55372==    by 0x5070A8: PyCode_NewWithPosOnlyArgs (in /usr/bin/python3.8)
+==55372==    by 0x4E56EB: PyCode_New (in /usr/bin/python3.8)
+==55372==    by 0x31A0CB81: __pyx_pymod_exec_bit_generator (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/bit_generator.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x5D4E9B: PyModule_ExecDef (in /usr/bin/python3.8)
+==55372==    by 0x5D4DC6: ??? (in /usr/bin/python3.8)
+==55372==    by 0x51D70E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50EF30: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x50E301: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372== 
+==55372== 240 (+240) (176 (+176) direct, 64 (+64) indirect) bytes in 1 (+1) blocks are definitely lost in loss record 19,219 of 25,491
+==55372==    at 0x483C7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==55372==    by 0x5070A8: PyCode_NewWithPosOnlyArgs (in /usr/bin/python3.8)
+==55372==    by 0x4E56EB: PyCode_New (in /usr/bin/python3.8)
+==55372==    by 0x31A0CBF6: __pyx_pymod_exec_bit_generator (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/bit_generator.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x5D4E9B: PyModule_ExecDef (in /usr/bin/python3.8)
+==55372==    by 0x5D4DC6: ??? (in /usr/bin/python3.8)
+==55372==    by 0x51D70E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50EF30: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x50E301: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372== 
+==55372== 256 (+256) (176 (+176) direct, 80 (+80) indirect) bytes in 1 (+1) blocks are definitely lost in loss record 19,357 of 25,491
+==55372==    at 0x483C7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==55372==    by 0x5070A8: PyCode_NewWithPosOnlyArgs (in /usr/bin/python3.8)
+==55372==    by 0x4E56EB: PyCode_New (in /usr/bin/python3.8)
+==55372==    by 0x31A0CD6E: __pyx_pymod_exec_bit_generator (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/bit_generator.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x5D4E9B: PyModule_ExecDef (in /usr/bin/python3.8)
+==55372==    by 0x5D4DC6: ??? (in /usr/bin/python3.8)
+==55372==    by 0x51D70E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50EF30: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x50E301: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372== 
+==55372== 256 (+256) (176 (+176) direct, 80 (+80) indirect) bytes in 1 (+1) blocks are definitely lost in loss record 19,358 of 25,491
+==55372==    at 0x483C7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==55372==    by 0x5070A8: PyCode_NewWithPosOnlyArgs (in /usr/bin/python3.8)
+==55372==    by 0x4E56EB: PyCode_New (in /usr/bin/python3.8)
+==55372==    by 0x31A0CDF0: __pyx_pymod_exec_bit_generator (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/bit_generator.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x5D4E9B: PyModule_ExecDef (in /usr/bin/python3.8)
+==55372==    by 0x5D4DC6: ??? (in /usr/bin/python3.8)
+==55372==    by 0x51D70E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50EF30: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x50E301: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372== 
+==55372== 256 (+256) (176 (+176) direct, 80 (+80) indirect) bytes in 1 (+1) blocks are definitely lost in loss record 19,359 of 25,491
+==55372==    at 0x483C7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==55372==    by 0x5070A8: PyCode_NewWithPosOnlyArgs (in /usr/bin/python3.8)
+==55372==    by 0x4E56EB: PyCode_New (in /usr/bin/python3.8)
+==55372==    by 0x32C0A047: __Pyx_InitCachedConstants (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/_generator.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x32C0AE87: __pyx_pymod_exec__generator (in /home/tristan/.local/lib/python3.8/site-packages/numpy/random/_generator.cpython-38-x86_64-linux-gnu.so)
+==55372==    by 0x5D4E9B: PyModule_ExecDef (in /usr/bin/python3.8)
+==55372==    by 0x5D4DC6: ??? (in /usr/bin/python3.8)
+==55372==    by 0x51D70E: ??? (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50EF30: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372== 
+==55372== LEAK SUMMARY:
+==55372==    definitely lost: 1,968 (+1,968) bytes in 20 (+20) blocks
+==55372==    indirectly lost: 553 (+553) bytes in 10 (+10) blocks
+==55372==      possibly lost: 9,574,300 (+9,574,300) bytes in 91,155 (+91,155) blocks
+==55372==    still reachable: 24,188,612 (+24,188,612) bytes in 162,207 (+162,207) blocks
+==55372==                       of which reachable via heuristic:
+==55372==                         newarray           : 544 (+544) bytes in 34 (+34) blocks
+==55372==         suppressed: 0 (+0) bytes in 0 (+0) blocks
+==55372== Reachable blocks (those to which a pointer was found) are not shown.
+==55372== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==55372== 
+**55372** 
+**55372** **********************************************************************
+**55372** tests/test_LOPART.py::test_LOPART
+**55372** **********************************************************************
+==55372== Use of uninitialised value of size 8
+==55372==    at 0x508F37: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x50E301: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x51E8F6: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50AC36: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x50828E: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50AC36: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x50828E: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==  Uninitialised value was created by a stack allocation
+==55372==    at 0x6DA9260: LOPARTInterface (interface.c:9)
+==55372== 
+==55372== Invalid read of size 8
+==55372==    at 0x508F37: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x507964: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x50E301: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x51E8F6: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50AC36: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x50828E: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==    by 0x51E989: _PyFunction_Vectorcall (in /usr/bin/python3.8)
+==55372==    by 0x5302C4: PyVectorcall_Call (in /usr/bin/python3.8)
+==55372==    by 0x50AC36: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372==    by 0x50828E: _PyEval_EvalCodeWithName (in /usr/bin/python3.8)
+==55372==  Address 0x4 is not stack'd, malloc'd or (recently) free'd
+==55372== 
+==55372== 
+==55372== Process terminating with default action of signal 11 (SIGSEGV)
+==55372==    at 0x4877A19: raise (raise.c:45)
+==55372==    by 0x4877BAF: ??? (in /usr/lib/x86_64-linux-gnu/libpthread-2.32.so)
+==55372==    by 0x508F36: _PyEval_EvalFrameDefault (in /usr/bin/python3.8)
+==55372== 
+==55372== HEAP SUMMARY:
+==55372==     in use at exit: 33,907,462 bytes in 254,410 blocks
+==55372==   total heap usage: 1,010,054 allocs, 755,644 frees, 206,810,776 bytes allocated
+==55372== 
+==55372== LEAK SUMMARY:
+==55372==    definitely lost: 2,032 bytes in 22 blocks
+==55372==    indirectly lost: 619 bytes in 14 blocks
+==55372==      possibly lost: 9,638,160 bytes in 91,363 blocks
+==55372==    still reachable: 24,266,651 bytes in 163,011 blocks
+==55372==                       of which reachable via heuristic:
+==55372==                         newarray           : 592 bytes in 37 blocks
+==55372==         suppressed: 0 bytes in 0 blocks
+==55372== Rerun with --leak-check=full to see details of leaked memory
+==55372== 
+==55372== For lists of detected and suppressed errors, rerun with: -s
+==55372== ERROR SUMMARY: 9180 errors from 9180 contexts (suppressed: 0 from 0)
