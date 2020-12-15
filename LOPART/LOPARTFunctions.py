@@ -83,7 +83,7 @@ def runLOPART(data, labels, penalty, n_updates=-1, inf=False, penalty_unlabeled=
 
     segmentsdf = pd.DataFrame(segmentRanges)
 
-    outputSegments = segmentsdf[segmentsdf['start'] < segmentsdf['end']]
+    outputSegments = segmentsdf[segmentsdf['start'] < segmentsdf['end']].copy()
 
     heights = segmentsTemp['mean'].tolist()
 
