@@ -92,6 +92,64 @@ def runLOPART(data, labels, penalty, n_updates=-1, inf=False, penalty_unlabeled=
     return {'loss': loss, 'cost': lopartOutput, 'changes': changes, 'segments': outputSegments}
 
 
+def runSlimLOPART(data, labels, penalty, n_updates=-1, penalty_unlabeled=-1):
+    if not float(n_updates).is_integer():
+        raise Exception
+    if n_updates < 1:
+        n_updates = len(data)
+
+    lenData = len(data)
+
+    penalty_labeled = penalty
+    if not penalty_unlabeled > 0:
+        penalty_unlabeled = penalty
+
+    if isinstance(data, list):
+        data = np.array(data).astype(np.double)
+
+    lopartOutput = LOPARTInterface.interface(data,
+                                             lenData,
+                                             (labels['start'] - 1).to_numpy(dtype=np.intc),
+                                             (labels['end'] - 1).to_numpy(dtype=np.intc),
+                                             labels['change'].to_numpy(dtype=np.intc),
+                                             len(labels.index),
+                                             penalty_labeled,
+                                             penalty_unlabeled,
+                                             n_updates)
+
+    outputdf = pd.DataFrame(lopartOutput)
+
+    outputLen = len(outputdf.index)
+
+    addOne = outputdf['last_change'] + 1
+
+    changeVec = addOne[0 <= addOne]
+
+    segmentsTemp = outputdf[outputdf['last_change'] != -2]
+
+    starts = [1, ]
+
+    changeStarts = (changeVec + 1).tolist()
+
+    starts.extend(changeStarts)
+
+    ends = changeVec.tolist()
+
+    ends.extend([outputLen])
+
+    segmentRanges = {'start': starts, 'end': ends}
+
+    segmentsdf = pd.DataFrame(segmentRanges)
+
+    outputSegments = segmentsdf[segmentsdf['start'] < segmentsdf['end']].copy()
+
+    heights = segmentsTemp['mean'].tolist()
+
+    outputSegments['height'] = heights
+
+    return outputSegments
+
+
 def calculateComplexity(change, penalty):
     if change == 0:
         return 0

@@ -39,3 +39,10 @@ def test_LOPARTNegativeLabel():
     output = LOPART.runLOPART(data, labels, penalty)
 
     assert len(output['segments'].index) == 1
+
+def test_slimLOPART():
+    labels = pd.DataFrame({'start': [1], 'end': [len(data)], 'change': [0]})
+    penalty = 10
+    output = LOPART.runSlimLOPART(data, labels, penalty)
+
+    assert len(output.index) == 1
