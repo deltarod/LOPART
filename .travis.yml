@@ -1,23 +1,21 @@
-language: r
+language: python
 
-dist: bionic
+python:
+  - 3.6
+  - 3.7
+  - 3.8
 
-apt_packages:
-  - texlive
-  - ghostscript
-  - texlive-fonts-extra
-  - texinfo
+before_install:
+  - python --version
+  - pip install -U pip
+  - pip install -U pytest
+  - pip install codecov
+
+install:
+  - pip install .
 
 script:
-  - bash build.sh
-
-notifications:
-  email:
-    on_success: change
-    on_failure: change
-
-r_github_packages:
-  - jimhester/covr
+  - pytest
 
 after_success:
-  - Rscript -e "covr::coveralls()"
+  - codecov
