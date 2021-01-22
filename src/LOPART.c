@@ -1,6 +1,5 @@
 #include "LOPART.h"
 #include <math.h>
-#include <cmath>
 #include <stdio.h>
 
 #define UNLABELED -1

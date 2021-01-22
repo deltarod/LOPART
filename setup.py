@@ -19,7 +19,7 @@ setuptools.setup(
         'test': ['pytest']
     },
     ext_modules=[setuptools.Extension('LOPARTInterface',
-                                      ['src/interface.c', 'src/LOPART.cpp'],
+                                      ['src/interface.c', 'src/LOPART.c'],
                                       include_dirs=[numpy.get_include()],
                                       extra_compile_args=['-std=c++11'])],
     classifiers=[
