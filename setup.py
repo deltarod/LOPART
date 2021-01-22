@@ -20,7 +20,8 @@ setuptools.setup(
     },
     ext_modules=[setuptools.Extension('LOPARTInterface',
                                       ['src/interface.c', 'src/LOPART.c'],
-                                      include_dirs=[numpy.get_include()])],
+                                      include_dirs=[numpy.get_include()],
+                                      extra_compile_args=['-std=c++11'])],
     classifiers=[
         "Programming Language :: Python :: 3.8",
         "Programming Language :: C",
