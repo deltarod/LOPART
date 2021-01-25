@@ -44,7 +44,7 @@ int LOPART
     if(input_label_end[j] <= input_label_start[j]){
       return ERROR_EACH_LABEL_START_MUST_BE_LESS_THAN_ITS_END;
     }
-    if(input_label_changes[j] != 0 && input_label_changes[j] != 1){
+    if(input_label_changes[j] != 0 && input_label_changes[j] != 1 && input_label_changes[j] != -1){
       return ERROR_LABELED_NUMBER_OF_CHANGES_MUST_BE_0_OR_1;
     }
     if(0<j){
